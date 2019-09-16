@@ -20,7 +20,54 @@
     </header>
     <main>
       <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
-      <!-- Здесь будет форма -->
+      <h2 class="visually-hidden">Фильтр гостиниц</h2>
+      <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="infrastructure">
+          <legend class="infrastrucuture-title">Инфраструктура</legend>
+          <ul class="infrastructure-items-list">
+            <li class="infrastructure-item">
+              <input type="checkbox" name="pool" id="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li class="infrastructure-item">
+              <input type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li class="infrastructure-item">
+              <input type="checkbox" name="wifi" id="wifi">
+              <label for="wifi">Wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="accomodation">
+          <legend class="accomodation-title">Тип жилья</legend>
+          <ul class="accomodation-items-list">
+            <li class="accomodation-item">
+              <input type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li class="accomodation-item">
+              <input type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li class="accomodation-item">
+              <input type="checkbox" name="apartment" id="apartment" checked>
+              <label for="apartment">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="price-range">
+          <legend class="price-range-title">Стоимость в сутки</legend>
+          <p class="price-range-description">
+            От 0 до 3000
+          </p>
+          <input class="range-button" type="button">
+          <div class="range-line"></div>
+          <input class="range-button" type="button">
+        </fieldset>
+        <input type="submit" value="Показать">
+        </form>
+      </section>
       <section class="hotel-sorting">
         <h2 class="visually-hidden">Сортировка результатов поиска</h2>
         <p class="hotel-found">Найдено: 3</p>
