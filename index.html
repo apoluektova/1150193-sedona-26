@@ -97,6 +97,41 @@
         <p class="description-capitalized">Заинтересовались?</p>
         <p class="main-slogan-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
       </section>
+      <section class="popup">
+        <h2 class="visually-hidden">Форма бронирования</h2>
+        <p class="search-button">
+          <button type="button">Поиск гостиницы в Седоне</button>
+        </p>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="choose-date">
+            <label for="checkin">Дата заезда:</label>
+            <input type="text" name="checkin" id="checkin" value="24 апреля 2017">
+          </p>
+          <p class="choose-date">
+            <label for="checkout">Дата выезда:</label>
+            <input type="text" name="checkout" id="checkout" value="4 июля 2017">
+          </p>
+          <p class="choose-guests">
+            <label for="adults">Взрослые:</label>
+            <div>
+              <button type="button">-</button>
+              <input type="text" name="adults" id="adults" value="2">
+              <button type="button">+</button>
+            </div>
+          </p>
+          <p class="choose-guests">
+            <label for="kids">Дети:</label>
+            <div>
+              <button type="button">-</button>
+              <input type="text" name="kids" id="kids" value="0">
+              <button type="button">+</button>
+            </div>
+          </p>
+          <p class="search-button">
+            <button type="button">Найти</button>
+          </p>
+        </form>
+      </section>
       <section class="map">
         <h2 class="visually-hidden">Карта Седоны</h2>
         <img  src="img/map.png" alt="Седона расположена в штате Аризона, США, индекс 86336">
@@ -123,32 +158,5 @@
         </a>
       </p>
     </footer>
-    <section class="search-from">
-      <h2 class="visually-hidden">Форма бронирования</h2>
-      <p class="search-button">
-        <button type="button">Поиск гостиницы в Седоне</button>
-      </p>
-      <form class="popup" action="https://echo.htmlacademy.ru" method="post">
-        <p class="choose-date">
-          <label for="checkin">Дата заезда:</label>
-          <input type="text" name="checkin" id="checkin" value="24 апреля 2017">
-        </p>
-        <p class="choose-date">
-          <label for="checkout">Дата выезда:</label>
-          <input type="text" name="checkout" id="checkout" value="4 июля 2017">
-        </p>
-        <p class="choose-guests">
-          <label for="adults">Взрослые:</label>
-          <input type="text" name="adults" id="adults" value="2">
-        </p>
-        <p class="choose-guests">
-          <label for="kids">Дети:</label>
-          <input type="text" name="kids" id="kids" value="0">
-        </p>
-        <p class="search-button">
-          <a href="inner.html">Найти</button>
-        </p>
-      </form>
-    </section>
   </body>
 </html>
