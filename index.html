@@ -100,35 +100,35 @@
       <section class="popup">
         <h2 class="visually-hidden">Форма бронирования</h2>
         <p class="search-button">
-          <button type="button">Поиск гостиницы в Седоне</button>
+          <button class="hotel-button" type="button">Поиск гостиницы в Седоне</button>
         </p>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="choose-date">
-            <label for="checkin">Дата заезда:</label>
-            <input type="text" name="checkin" id="checkin" value="24 апреля 2017">
+            <label for="checkin" class="button-label">Дата заезда:</label>
+            <input class="date-field" type="text" name="checkin" id="checkin" value="24 апреля 2017">
           </p>
           <p class="choose-date">
-            <label for="checkout">Дата выезда:</label>
-            <input type="text" name="checkout" id="checkout" value="4 июля 2017">
+            <label for="checkout" class="button-label">Дата выезда:</label>
+            <input class="date-field" type="text" name="checkout" id="checkout" value="4 июля 2017">
           </p>
           <p class="choose-guests">
-            <label for="adults">Взрослые:</label>
-            <div>
-              <button type="button">-</button>
-              <input type="text" name="adults" id="adults" value="2">
-              <button type="button">+</button>
+            <label for="adults" class="button-label">Взрослые:</label>
+            <div class="guests-count">
+              <button class="plus-button" type="button">-</button>
+              <input class="number-field" type="text" name="adults" id="adults" value="2">
+              <button class="plus-button" type="button">+</button>
             </div>
           </p>
           <p class="choose-guests">
-            <label for="kids">Дети:</label>
-            <div>
-              <button type="button">-</button>
-              <input type="text" name="kids" id="kids" value="0">
-              <button type="button">+</button>
+            <label for="kids" class="button-label">Дети:</label>
+            <div class="guests-count">
+              <button class="plus-button" type="button">-</button>
+              <input class="number-field" type="text" name="kids" id="kids" value="0">
+              <button class="plus-button" type="button">+</button>
             </div>
           </p>
           <p class="search-button">
-            <button type="button">Найти</button>
+            <button class="find-button" type="button">Найти</button>
           </p>
         </form>
       </section>
