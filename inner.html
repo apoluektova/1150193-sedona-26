@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -14,7 +17,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li class="site-navigation-current"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -23,7 +26,7 @@
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <form class="filter" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="infrastructure">
-          <legend class="infrastrucuture-title">Инфраструктура</legend>
+          <legend class="infrastructure-title">Инфраструктура</legend>
           <ul class="infrastructure-items-list">
             <li class="infrastructure-item">
               <input class="checkbox" type="checkbox" name="pool" id="pool" checked>
@@ -65,7 +68,7 @@
           <div class="range-line"></div>
           <input class="range-button" type="button">
         </fieldset>
-        <button type="button">Показать</button>
+        <button class="show-button" type="button">Показать</button>
         </form>
       </section>
       <section class="hotel-sorting">
@@ -73,13 +76,13 @@
         <p class="hotel-found">Найдено: 3</p>
         <h3 class="sorting-type">Сортировка:</h3>
         <ul class="sorting-list">
-          <li class="sorting-list-item"><a href="#">По цене</a></li>
+          <li class="sorting-list-item-current"><a href="#">По цене</a></li>
           <li class="sorting-list-item"><a href="#">По типу</a></li>
           <li class="sorting-list-item"><a href="#">По рейтингу</a></li>
         </ul>
         <ul class="sorting-direction">
           <li class="sorting-direction-item"><a href="#">По возрастанию</a></li>
-          <li class="sorting-direction-item"><a href="#">По убыванию</a></li>
+          <li class="sorting-direction-item-current"><a href="#">По убыванию</a></li>
         </ul>
       </section>
       <h2 class="visually-hidden">Результаты поиска</h2>
@@ -150,12 +153,13 @@
           <a href="#" aria-label="Седона в Фейсбуке">Facebook</a>
         </li>
         <li>
-          <a href="#" aria-label="Седона во Вконтакте">VK</a>
+          <a href="#" aria-label="Седона на Ютьюбе">YouTube</a>
         </li>
       </ul>
       <p class="main-footer-developer">
+        <p>Website by</p>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          Website by <img src="img/svg/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+          <img src="img/svg/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </p>
     </footer>

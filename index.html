@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -20,18 +23,18 @@
     </header>
     <main>
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <section class="main-photo">
+      <section class="main-photo visually-hidden">
         <p>
           Welcome to the gorgeous Sedona!
         </p>
         <p>
           "Because the Grand Canyon sucks!"
         </p>
+        </section>
         <img src="" alt="Фото Седоны">
-      </section>
       <section class="main-slogan">
         <p class="main-slogan-title">
-          Седона - небольшой городок в Аризоне, заслуживающий большего!
+          Седона - небольшой городок в Аризоне,<br> заслуживающий большего!
         </p>
         <p class="main-slogan-description">
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
@@ -43,26 +46,26 @@
           <li class="reason-item-photo-right">
             <img class="reason-photo" src="" alt="Фото городка">
             <section class="reason-marked">
-              <h3 class="reason-title-marked">Настоящий городок</h3>
+              <h3 class="reason-title-marked">Настоящий<br> городок</h3>
               <p class="reason-number-marked">-№1-</p>
-              <p class="reason-description-marked">Седона - не аттракцион для туристов, там течет настоящая жизнь</p>
+              <p class="reason-description-marked">Седона - не аттракцион для туристов,<br> там течет настоящая жизнь</p>
             </section>
             <section class="real-city-advantages">
               <ul class="advantages-list">
                 <li>
                   <img class="advantage-icon" src="" alt="Домик">
                   <h3 class="advantage-title">Жилье</h3>
-                  <p class="advantage-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  <p class="advantage-description">Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
                 </li>
                 <li>
                   <img class="advantage-icon" src="" alt="Бургер">
                   <h3 class="advantage-title">Еда</h3>
-                  <p class="advantage-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="advantage-description">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
                 </li>
                 <li>
                   <img class="advantage-icon" src="" alt="Подарок">
                   <h3 class="advantage-title">Сувениры</h3>
-                  <p class="advantage-description">Не только китайского, но и местного производства!</p>
+                  <p class="advantage-description">Не только китайского, но и местного<br> производства!</p>
                 </li>
               </ul>
             </section>
@@ -70,32 +73,32 @@
           <li class="reason-item-photo-left">
             <img class="reason-photo" src="" alt="Фото моста">
             <section class="reason-marked">
-              <h3 class="reason-title-marked">Там есть мост дьявола</h3>
+              <h3 class="reason-title-marked">Там есть<br> мост дьявола</h3>
               <p class="reason-number-marked">-№2-</p>
-              <p class="reason-description-marked">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <p class="reason-description-marked">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
             </section>
           </li>
           <li class="reason-item-plain">
-            <h3 class="reason-title">Небольшая площадь</h3>
+            <h3 class="reason-title">Небольшая<br> площадь</h3>
             <p class="reason-number">-№3-</p>
-            <p class="reason-description">Все достопримечательности находятся очень близко</p>
+            <p class="reason-description">Все достопримечательности<br> находятся очень близко</p>
           </li>
           <li class="reason-item-plain">
-            <h3 class="reason-title">Красивая дорога</h3>
+            <h3 class="reason-title">Красивая<br> дорога</h3>
             <p class="reason-number">-№4-</p>
-            <p class="reason-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="reason-description">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
           </li>
           <li class="reason-item-plain">
-            <h3 class="reason-title">Мало туристов</h3>
+            <h3 class="reason-title">Мало<br> туристов</h3>
             <p class="reason-number">-№5-</p>
-            <p class="reason-description">Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="reason-description">Большинство едет в Гранд Каньон<br> и толпится там</p>
           </li>
         </ol>
       </section>
       <section class="pre-map-container">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p class="description-capitalized">Заинтересовались?</p>
-        <p class="main-slogan-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
+        <p class="main-slogan-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
       </section>
       <section class="popup">
         <h2 class="visually-hidden">Форма бронирования</h2>
@@ -149,12 +152,13 @@
           <a href="#" aria-label="Седона в Фейсбуке">Facebook</a>
         </li>
         <li>
-          <a href="#" aria-label="Седона во Вконтакте">VK</a>
+          <a href="#" aria-label="Седона на Ютьюбе">YouTube</a>
         </li>
       </ul>
       <p class="main-footer-developer">
+        <p>Website by</p>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          Website by <img src="img/svg/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+          <img src="img/svg/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </p>
     </footer>
