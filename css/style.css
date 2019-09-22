@@ -8,8 +8,7 @@ body {
   text-transform: uppercase;
   color: #333333;
   background-color: #F2F2F2;
-  background-position: top center;
-  background-repeat: no-repeat;
+  text-align: center;
 }
 
 a {
@@ -28,7 +27,7 @@ a {
 }
 
 .main-navigation {
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
   line-height: 26px;
   text-align: center;
@@ -43,7 +42,7 @@ a {
   color: #000000;
 }
 
-.site-navigation-current a {
+.site-navigation a:not([href]) {
   color: #766357;
 }
 
@@ -54,32 +53,23 @@ a {
 }
 
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
   color: #81B3D2
 }
 
-.site-navigation a:focus {
-  color: rgba(129,179,210,0.3);
-}
-
 .site-navigation a:active {
-  color: #766357;
+  color: rgba(129,179,210,0.3);
 }
 
 .main-slogan {
   line-height: 26px;
   background-color: #FFFFFF;
-  text-align: center;
 }
 
 .main-slogan-title {
   font-size: 21px;
-  font-weight: bold;
-}
-
-.main-slogan-description {
-  font-size: 14px;
-  color: #333333;
+  font-weight: 700;
 }
 
 .reasons-list {
@@ -90,18 +80,16 @@ a {
   background-color: #81B3D2;
   color: #FFFFFF;
   line-height: 21px;
-  text-align: center;
 }
 
 .reason-title-marked {
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .real-city-advantages {
   background-color: #FFFFFF;
   line-height: 21px;
-  text-align: center;
 }
 
 .advantages-list {
@@ -111,51 +99,40 @@ a {
 .advantage-title {
   font-size: 21px;
   color: #000000;
-  font-weight: bold;
-}
-
-.advantage-description {
-  color: #333333;
+  font-weight: 700;
 }
 
 .reason-item-plain {
   background-color: #EEEEEE;
   line-height: 21px;
-  text-align: center;
 }
 
 .reason-item-title {
   font-size: 21px;
-  font-weight: bold;
-}
-
-.reason-item-description {
-  color: #333333;
+  font-weight: 700;
 }
 
 .pre-map-container {
   line-height: 24px;
   background-color: #FFFFFF;
-  text-align: center;
 }
 
 .description-capitalized {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 36px;
 }
+
 .popup {
   background-color: #FFFFFF;
 }
 
 .hotel-button {
-  font: inherit;
-  text-align: center;
   color: #ffffff;
   background-color: #766357;
-  vertical-align: middle;
   text-transform: uppercase;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
   border: none;
 }
@@ -171,15 +148,12 @@ a {
 }
 
 .find-button {
-  font: inherit;
-  text-align: center;
   color: #ffffff;
   background-color: #81B3D2;
-  vertical-align: middle;
   text-transform: uppercase;
   font-size: 21px;
-  font-weight: bold;
-  line-height: 25px;
+  font-weight: 700;
+  line-height: 26px;
   border: none;
 }
 
@@ -199,34 +173,24 @@ a {
 }
 
 .button-label {
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
 }
 
-.date-field {
-  font: inherit;
-  background-color: #F2F2F2;
-  border: none;
-}
-
-.date-field:hover {
-  background-color: #EBEBEB;
-}
-
-.date-field:focus {
-  background-color: #FFFFFF;
-}
-
+.date-field,
 .number-field {
-  font: inherit;
   background-color: #F2F2F2;
   border: none;
+  line-height: 26px;
+  font-weight: 700;
 }
 
-.number-field:hover {
+.date-field:hover,
+.number-field:hover  {
   background-color: #EBEBEB;
 }
 
+.date-field:focus,
 .number-field:focus {
   background-color: #FFFFFF;
 }
@@ -237,9 +201,8 @@ a {
 
 .main-footer-hashtag {
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
-  text-align: center;
 }
 
 .main-footer-hashtag a {
@@ -248,7 +211,6 @@ a {
 }
 
 .main-footer-social {
-  text-align: center;
   list-style: none;
 }
 
@@ -257,14 +219,13 @@ a {
 }
 
 .main-footer-developer {
-  text-align: center;
-  font-size: inherit;
   line-height: 26px;
   color: #000000;
 }
 
 .hotel-container {
   background-color: #FFFFFF;
+  text-align: left;
 }
 
 .hotel-description {
@@ -273,7 +234,7 @@ a {
 
 .hotel-title {
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
 }
 
@@ -281,11 +242,12 @@ a {
   color: #000000;
 }
 
-.hotel-title a:hover {
+.hotel-title a:hover,
+.hotel-title a:focus {
   color: #81B3D2;
 }
 
-.hotel-title a:focus {
+.hotel-title a:active {
   color: rgba(0,0,0,0.3);
 }
 
@@ -294,32 +256,37 @@ a {
   line-height: 21px;
 }
 
-.hotel-details-link {
-  background-color: #81B3D2;
-  font-weight: bold;
+.hotel-links {
+  font-weight: 700;
   color: #FFFFFF;
 }
 
-.hotel-details-link:hover {
+.hotel-details-link {
+  background-color: #81B3D2;
+  color: inherit;
+}
+
+.hotel-details-link:hover,
+.hotel-details-link:focus {
   background-color: #669EC0;
 }
 
-.hotel-details-link:focus {
+.hotel-details-link:active {
   background-color: #5496BD;
   color: rgba(255,255,255,0.3);
 }
 
 .hotel-book-link {
   background-color: #766357;
-  font-weight: bold;
-  color: #FFFFFF;
+  color: inherit;
 }
 
-.hotel-book-link:hover {
+.hotel-book-link:hover,
+.hotel-book-link:focus {
   background-color: #604E43;
 }
 
-.hotel-book-link:focus {
+.hotel-book-link:active {
   background-color: #503E33;
   color: rgba(255,255,255,0.3);
 }
@@ -338,20 +305,18 @@ a {
   color: #FFFFFF;
 }
 
-.filter fieldset {
+.filter-section {
   border: none;
 }
 
-.infrastructure-title,
-.accomodation-title,
+.filter-title,
 .price-range-title {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 21px;
 }
 
-.infrastructure-items-list,
-.accomodation-items-list {
+.filter-list {
   list-style: none;
   line-height: 21px;
   text-align: left;
@@ -363,8 +328,7 @@ a {
 }
 
 .show-button {
-  font: inherit;
-  text-align: center;
+  font: 16px;
   color: #ffffff;
   background-color: transparent;
   vertical-align: middle;
@@ -387,13 +351,12 @@ a {
 
 .hotel-found {
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
 }
 
 .sorting-type {
   font-weight: 400;
-  font-size: 12px;
 }
 
 .sorting-list,
@@ -403,12 +366,10 @@ a {
 
 .sorting-list-item a {
   color: rgba(0,0,0,0.3);
-  font-size: 12px;
-  line-height: 18px;
   border-bottom: 1px dotted #81B3D2;
 }
 
-.sorting-list-item-current a {
+.sorting-list-item a:not([href]) {
   color: #81B3D2;
 }
 
@@ -429,6 +390,6 @@ a {
   color: #CACACA;
 }
 
-.sorting-direction-item-current a {
+.sorting-direction-item a:not([href]) {
   color: #81B3D2;
 }
