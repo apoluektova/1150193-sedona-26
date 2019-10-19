@@ -45,12 +45,11 @@
           <ol class="reasons-list">
             <li class="reason-item-photo">
               <div class="reason-wrapper">
-                <section class="reason-marked">
+                <section class="reason-marked left">
                   <h3 class="reason-title-marked">Настоящий<br> городок</h3>
                   <p class="reason-number-marked">-№1-</p>
                   <p class="reason-description-marked">Седона &#8212; не аттракцион для туристов,<br> там течет своя жизнь</p>
                 </section>
-                <div class="reason-photo-right"></div>
               </div>
               <section class="real-city-advantages">
                 <ul class="advantages-list">
@@ -71,8 +70,7 @@
             </li>
             <li class="reason-item-photo">
               <div class="reason-wrapper">
-                <div class="reason-photo-left"></div>
-                <section class="reason-marked">
+                <section class="reason-marked right">
                   <h3 class="reason-title-marked">Там есть<br> мост дьявола</h3>
                   <p class="reason-number-marked">-№2-</p>
                   <p class="reason-description-marked">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
@@ -105,7 +103,7 @@
           <h2 class="visually-hidden">Форма бронирования</h2>
           <button class="hotel-button" type="button">Поиск гостиницы в Седоне</button>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="choose-date">
+            <div class="choose-date">
                 <label for="checkin" class="button-label">Дата заезда:</label>
                 <input class="date-field" type="text" name="checkin" id="checkin" placeholder="24 апреля 2017">
                 <button class="calendar" type="button">
@@ -127,7 +125,7 @@
                   </svg>
                 </button>
               </div>
-              <div class="choose-date">
+            <div class="choose-date">
                 <label for="checkout" class="button-label">Дата выезда:</label>
                 <input class="date-field" type="text" name="checkout" id="checkout" placeholder="4 июля 2017">
                 <button class="calendar" type="button">
@@ -149,42 +147,44 @@
                   </svg>
                 </button>
               </div>
-            <div class="choose-guests">
-              <label for="adults" class="button-label">Взрослые:</label>
-              <div class="guests-count">
-                <button class="plus-button" type="button">
-                  <span class="visually-hidden">Уменьшить</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="3px" viewBox="0 0 12 3" fill="#A9A9A9">
-                    <rect x="0" y="0" width="12" height="3"></rect>
-                  </svg>
-                </button>
-                <input class="number-field" type="text" name="adults" id="adults" placeholder="2">
-                <button class="plus-button" type="button">
-                  <span class="visually-hidden">Увеличить</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11px" height="11px" viewBox="0 0 11 11" fill="#A9A9A9">
-                    <rect x="0" y="4" width="11" height="3"></rect>
-                    <rect x="4" y="0" width="3" height="11"></rect>
-                  </svg>
-                </button>
+            <div class="guests-wrapper">
+              <div class="choose-guests">
+                <label for="adults" class="button-label">Взрослые:</label>
+                <div class="guests-count">
+                  <button class="plus-button" type="button">
+                    <span class="visually-hidden">Уменьшить</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="3px" viewBox="0 0 12 3" fill="#A9A9A9">
+                      <rect x="0" y="0" width="12" height="3"></rect>
+                    </svg>
+                  </button>
+                  <input class="number-field" type="text" name="adults" id="adults" placeholder="2">
+                  <button class="plus-button" type="button">
+                    <span class="visually-hidden">Увеличить</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11px" height="11px" viewBox="0 0 11 11" fill="#A9A9A9">
+                      <rect x="0" y="4" width="11" height="3"></rect>
+                      <rect x="4" y="0" width="3" height="11"></rect>
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="choose-guests">
-              <label for="kids" class="button-label">Дети:</label>
-              <div class="guests-count">
-                <button class="plus-button" type="button">
-                  <span class="visually-hidden">Уменьшить</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="3px" viewBox="0 0 12 3" fill="#A9A9A9">
-                    <rect x="0" y="0" width="12" height="3"></rect>
-                  </svg>
-                </button>
-                <input class="number-field" type="text" name="kids" id="kids" placeholder="0">
-                <button class="plus-button" type="button">
-                  <span class="visually-hidden">Увеличить</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11px" height="11px" viewBox="0 0 11 11" fill="#A9A9A9">
-                    <rect x="0" y="4" width="11" height="3"></rect>
-                    <rect x="4" y="0" width="3" height="11"></rect>
-                  </svg>
-                </button>
+              <div class="choose-guests kids">
+                <label for="kids" class="button-label kids">Дети:</label>
+                <div class="guests-count">
+                  <button class="plus-button" type="button">
+                    <span class="visually-hidden">Уменьшить</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="3px" viewBox="0 0 12 3" fill="#A9A9A9">
+                      <rect x="0" y="0" width="12" height="3"></rect>
+                    </svg>
+                  </button>
+                  <input class="number-field" type="text" name="kids" id="kids" placeholder="0">
+                  <button class="plus-button" type="button">
+                    <span class="visually-hidden">Увеличить</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11px" height="11px" viewBox="0 0 11 11" fill="#A9A9A9">
+                      <rect x="0" y="4" width="11" height="3"></rect>
+                      <rect x="4" y="0" width="3" height="11"></rect>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
             <button class="find-button" type="button">Найти</button>
@@ -197,7 +197,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419154.4635619917!2d-112.00251791055317!3d34.83982728958584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1571176346806!5m2!1sru!2sru"
             width="1200" height="593" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             -->
-            <img src="img/map.png" alt="Седона расположена в штате Аризона, США, индекс 86336">
+            <img class="map-image" src="img/map.png" alt="Седона расположена в штате Аризона, США, индекс 86336">
           </section>
           </main>
           <footer class="main-footer-index">
@@ -229,7 +229,7 @@
                 </div>
               </div>
           </footer>
-      </div>
+        </div>
     </div>
   <script src="js/script.js">
   </script>
