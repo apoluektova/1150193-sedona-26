@@ -22,14 +22,16 @@ if (storageAdults || storageKids) {
 
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
+  modal.classList.remove("modal-error");
   modal.classList.toggle("modal-show");
   modal.classList.toggle("modal-hide");
   checkin.focus();
 });
 
+modal.classList.add("modal-hide");
 
 modal.addEventListener("submit", function(evt) {
-  if (!checkin.value || !checkout.value || !adults.value || !kids.value) {
+  if (!checkin.value || !checkout.value || !adults.value || !kids.value || adults.value == "0") {
   evt.preventDefault();
   modal.classList.remove("modal-error");
   modal.offsetWidth = modal.offsetWidth;
@@ -48,6 +50,7 @@ window.addEventListener("keydown", function (evt) {
       if (modal.classList.contains("modal-show")) {
         modal.classList.remove("modal-show");
         modal.classList.remove("modal-error");
+        modal.classList.add("modal-hide");
       }
     }
   });
