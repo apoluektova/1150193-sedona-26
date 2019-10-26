@@ -708,6 +708,13 @@ img {
   background-color: #EBEBEB;
 }
 
+.date-field::-moz-focus-inner,
+.number-field::-moz-focus-inner {
+  border: 2px solid #E5E5E5;
+  outline: none;
+  background-color: #FFFFFF;
+}
+
 .date-field:focus,
 .number-field:focus,
 .date-field::-moz-focus-inner,
