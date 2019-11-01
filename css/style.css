@@ -101,7 +101,7 @@ img {
   text-align: right;
 }
 
-.site-navigation li:nth-child(3) {
+.site-navigation li:nth-child(4n-1) {
   margin-left: auto;
 
   letter-spacing: 0.5px;
