@@ -686,17 +686,18 @@ img {
 .date-field:hover,
 .number-field:hover {
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
-.date-field:focus,
-.number-field:focus {
+.date-field::-moz-focus-inner,
+.number-field::-moz-focus-inner {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   outline: none;
 }
 
-.date-field::-moz-focus-inner,
-.number-field::-moz-focus-inner {
+.date-field:focus,
+.number-field:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   outline: none;
@@ -1002,11 +1003,6 @@ img {
 
   margin-bottom: 24px;
   padding-left: 40px;
-}
-
-.filter-item:hover,
-.filter-item:focus {
-  text-decoration: underline;
 }
 
 .filter-item:last-child {
