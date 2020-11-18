@@ -3,6 +3,7 @@
 * Студент: [Анна Полуэктова](https://up.htmlacademy.ru/htmlcss/26/user/1150193).
 * Наставник: [Максим Фарига](https://htmlacademy.ru/profile/maximfariga).
 
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
